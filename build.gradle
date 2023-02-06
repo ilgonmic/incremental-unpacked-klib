@@ -1,0 +1,23 @@
+// Remove buildscript block once js incremental test will be migrated
+buildscript {
+    repositories {
+        mavenLocal()
+        mavenCentral()
+        maven {
+            setUrl("https://maven.pkg.jetbrains.space/kotlin/p/kotlin/dev")
+        }
+    }
+    dependencies {
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.9.0-dev-1048"
+    }
+}
+
+subprojects {
+    repositories {
+        mavenLocal()
+        mavenCentral()
+        maven {
+            setUrl("https://maven.pkg.jetbrains.space/kotlin/p/kotlin/dev")
+        }
+    }
+}
